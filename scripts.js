@@ -2,7 +2,6 @@
 // Remember to pay attention to page loading!
 function init() {
 
-
     document.getElementById("takeoff").addEventListener('click', function() {
         let confirm = window.confirm('Confirm that the shuttle is ready for takeoff?');
         if (confirm) {
@@ -28,7 +27,6 @@ function init() {
         }
     })
 
-    
     let altitude = 0
     let ship = document.getElementById("rocket");
     ship.style.position = "absolute";
@@ -46,8 +44,6 @@ function init() {
         }
     })
 
-    
-
     document.getElementById("down").addEventListener('click', () => {
         let height = document.getElementById("spaceShuttleHeight");
         if (parseInt(ship.style.bottom) > 0) {
@@ -57,7 +53,6 @@ function init() {
         }
      })
     
-
     document.getElementById("left").addEventListener('click', () => {
         if (parseInt(ship.style.left) > 0) {
             ship.style.left = (parseInt(ship.style.left) - 10) + "px";
